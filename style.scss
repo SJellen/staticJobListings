@@ -19,3 +19,20 @@ body {
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
 }
+
+
+.job-container {
+
+    #job-listing {
+        border: 1px solid green;
+        li {
+            border: 1px solid purple;
+        }
+        img {
+            border: 1px solid red;
+        }
+       span {
+           border: 1px solid gold;
+       }
+    }
+}

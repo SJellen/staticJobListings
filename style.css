@@ -3,4 +3,20 @@ body {
   font-size: 15px;
   font-family: 'Spartan', sans-serif;
 }
+
+.job-container #job-listing {
+  border: 1px solid green;
+}
+
+.job-container #job-listing li {
+  border: 1px solid purple;
+}
+
+.job-container #job-listing img {
+  border: 1px solid red;
+}
+
+.job-container #job-listing span {
+  border: 1px solid gold;
+}
 /*# sourceMappingURL=style.css.map */
