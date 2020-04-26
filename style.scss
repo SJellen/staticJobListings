@@ -27,12 +27,53 @@ body {
         border: 1px solid green;
         li {
             border: 1px solid purple;
+            list-style: none;
         }
         img {
             border: 1px solid red;
         }
-       span {
-           border: 1px solid gold;
+       
+       .job-logo {
+        //    background-color: red;
        }
+       .job-card {
+        //    background-color: blue;
+       }
+       .posted {
+           color: red;
+       }
+       .company {
+            color: blue;
+       }
+       .isNew {
+           color:white;
+           background-color: teal;
+       }
+       .featured {
+           background-color: black;
+           color: white;
+       }
+       .position {
+           font-weight: 700;
+       }
+       .role {
+           color: green;
+       }
+       .contract {
+            color: silver;
+       }
+       .role {
+           color: purple;
+       }
+       .where {
+           color: lightsalmon
+       }
+       .level {
+         background-color: red;
+       }
+       .languages {
+          color: lime;
+       }
+     
     }
 }

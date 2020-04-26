@@ -10,13 +10,56 @@ body {
 
 .job-container #job-listing li {
   border: 1px solid purple;
+  list-style: none;
 }
 
 .job-container #job-listing img {
   border: 1px solid red;
 }
 
-.job-container #job-listing span {
-  border: 1px solid gold;
+.job-container #job-listing .posted {
+  color: red;
+}
+
+.job-container #job-listing .company {
+  color: blue;
+}
+
+.job-container #job-listing .isNew {
+  color: white;
+  background-color: teal;
+}
+
+.job-container #job-listing .featured {
+  background-color: black;
+  color: white;
+}
+
+.job-container #job-listing .position {
+  font-weight: 700;
+}
+
+.job-container #job-listing .role {
+  color: green;
+}
+
+.job-container #job-listing .contract {
+  color: silver;
+}
+
+.job-container #job-listing .role {
+  color: purple;
+}
+
+.job-container #job-listing .where {
+  color: lightsalmon;
+}
+
+.job-container #job-listing .level {
+  background-color: red;
+}
+
+.job-container #job-listing .languages {
+  color: lime;
 }
 /*# sourceMappingURL=style.css.map */
