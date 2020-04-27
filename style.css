@@ -2,19 +2,34 @@
 body {
   font-size: 15px;
   font-family: 'Spartan', sans-serif;
+  background-color: #effafa;
+  padding: 0;
+  margin: 0;
 }
 
-.job-container #job-listing {
-  border: 1px solid green;
+header {
+  background-image: url(./images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  height: 155px;
+  width: 100%;
+  background-color: #5ba4a4;
+  border-bottom: 1px solid #5ba4a4;
+  background-size: cover;
 }
 
 .job-container #job-listing li {
   border: 1px solid purple;
   list-style: none;
+  width: 80%;
+  height: 153px;
+  margin: 1.5rem auto;
+  border-radius: 5px;
 }
 
-.job-container #job-listing img {
-  border: 1px solid red;
+.job-container #job-listing .job-logo {
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  width: 80px;
 }
 
 .job-container #job-listing .posted {
@@ -60,6 +75,7 @@ body {
 }
 
 .job-container #job-listing .languages {
-  color: lime;
+  color: #5ba4a4;
+  background-color: rgba(123, 142, 142, 0.1);
 }
 /*# sourceMappingURL=style.css.map */

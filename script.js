@@ -20,24 +20,24 @@ fetch(url)
 .then(response => response.json())
 .then((data) => {
     let jobs = data  // get results
-    return jobs.map((job) => {  //map through results
+    return jobs.map((job) => {  
+        //map through results
         let li = createNode('li')
 
 
-        languages = createNode('span')
-        img = createNode('img')
-        posted = createNode('span')
-        company = createNode('span')
-        isNew = createNode('span')
-        featured = createNode('span')
-        position = createNode('span')
-        role = createNode('span')
-        contract = createNode('span')
-        role = createNode('span')
-        where = createNode('span')
-        level = createNode('span')
-
-
+            languages = createNode('span')
+            img = createNode('img')
+            posted = createNode('span')
+            company = createNode('span')
+            isNew = createNode('span')
+            featured = createNode('span')
+            position = createNode('span')
+            role = createNode('span')
+            contract = createNode('span')
+            where = createNode('span')
+            level = createNode('span')
+            tools = createNode('span')
+        
 
 
 
@@ -74,6 +74,14 @@ fetch(url)
         languages.className = "languages"
         languages.innerHTML = ` ${job.languages}`
 
+        
+        tools.className = 'tools'
+        tools.innerHTML = `${job.tools ? job.tools : ''}`
+
+       
+        
+
+        
 
 
 
@@ -94,6 +102,7 @@ fetch(url)
         append(li, contract)
         append(li, where)
         append(li, level)
+        append(li, tools)
         
 
         append(li, languages)

@@ -18,23 +18,40 @@ $veryDarkGrayishCyan: hsl(180, 14%, 20%);
 body {
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
+    background-color: $lightGrayishCyanBackground;
+    padding: 0;
+    margin: 0;
+   
+}
+header {
+    background-image: url(./images/bg-header-desktop.svg);
+    background-repeat: no-repeat;
+    height: 155px;
+    width: 100%;
+    background-color: $desaturatedDarkCyan;
+    border-bottom: 1px solid $desaturatedDarkCyan;
+    background-size: cover;
 }
 
-
 .job-container {
-
+    
     #job-listing {
-        border: 1px solid green;
+        
         li {
             border: 1px solid purple;
             list-style: none;
+            width: 80%;
+            height: 153px;
+            margin: 1.5rem auto;
+            border-radius: 5px;
+            
         }
-        img {
-            border: 1px solid red;
-        }
+        
        
        .job-logo {
-        //    background-color: red;
+        margin-left: 2.5rem;
+            margin-top: 2rem;
+            width: 80px;
        }
        .job-card {
         //    background-color: blue;
@@ -72,7 +89,9 @@ body {
          background-color: red;
        }
        .languages {
-          color: lime;
+          color: $desaturatedDarkCyan;
+          background-color: hsla(180, 8%, 52%, .1);
+          
        }
      
     }
