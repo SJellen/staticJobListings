@@ -4,11 +4,6 @@ const SEARCH_HIDDEN_CLASS = 'search--hidden';
 const CLOSE_TAG_CLASS = 'close-tag';
 const TAG_CLASS = 'tag';
 
-
-
-
-
-
 const jobsListings = [
     {
       "id": 1,
@@ -159,11 +154,19 @@ const jobsListings = [
     }
   ]
 
+
+
+
+
+
   function getTagHTML(tag, tagClasses) {
     return `<span class="${tagClasses}">
                 ${tag}
             </span>`;
 }
+
+
+
 
 function getJobListingHTML(jobData, filterTags = []) {
     const JOB_TAGS_PLACEHOLDER = '###JOB_TAGS###';
@@ -187,6 +190,7 @@ function getJobListingHTML(jobData, filterTags = []) {
             </div>
         </div>
     `;
+
 
     const tagsList = [
         jobData.role,
@@ -212,6 +216,11 @@ function getJobListingHTML(jobData, filterTags = []) {
     return jobListingHTML.replace(JOB_TAGS_PLACEHOLDER, tagsString);
 };
 
+
+
+
+
+
 function toggleClass(el, className) {
     if (el.classList.contains(className)) {
         el.classList.remove(className);
@@ -221,6 +230,10 @@ function toggleClass(el, className) {
     
     el.classList.add(className);
 }
+
+
+
+
 
 function getSearchBarTags(tagValue, searchContentEl) {
     let searchBarTags = Array.from(searchContentEl.children)
@@ -236,6 +249,11 @@ function getSearchBarTags(tagValue, searchContentEl) {
     return searchBarTags;
 }
 
+
+
+
+
+
 function setJobsListings(filterTags) {
     const jobsListingsHTML = jobsListings.reduce((acc, currentListing) => {
         return acc + getJobListingHTML(currentListing, filterTags);
@@ -243,6 +261,11 @@ function setJobsListings(filterTags) {
     
     document.getElementById('jobs').innerHTML = jobsListingsHTML;
 }
+
+
+
+
+
 
 function displaySearchWrapper(display = false) {
     const searchWrapper = document.getElementById('search');
@@ -256,11 +279,21 @@ function displaySearchWrapper(display = false) {
     searchWrapper.classList.add(SEARCH_HIDDEN_CLASS);
 }
 
+
+
+
+
+
 function setSearchbarContent(searchContentEl, tags) {
     searchContentEl.innerHTML = tags.reduce((acc, currentTag) => {
         return acc + getTagHTML(currentTag, CLOSE_TAG_CLASS);
     }, '');
 }
+
+
+
+
+
 
 function resetState(searchContentEl) {
     searchContentEl.innerHTML = '';
@@ -269,6 +302,9 @@ function resetState(searchContentEl) {
     displaySearchWrapper(false);
     toggleClass(targetEl, TAG_ACTIVE_CLASS);
 }
+
+
+
 
 window.addEventListener('click', (event) => {
     const targetEl = event.target;
@@ -291,5 +327,10 @@ window.addEventListener('click', (event) => {
     displaySearchWrapper(searchBarTags.length > 0);
     setJobsListings(searchBarTags);
 });
+
+
+
+
+
 
 setJobsListings();

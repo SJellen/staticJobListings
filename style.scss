@@ -37,6 +37,13 @@ body {
     padding: 0 40px 40px;
 }
 
+
+
+
+
+
+
+
 .search {
     width: 100%;
     height: auto;
@@ -71,6 +78,16 @@ body {
 .search__clear:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
 
 .jobs {
     margin-top: 36px;
@@ -148,6 +165,15 @@ body {
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
 .tag, .close-tag {
     display: inline-block;
     width: auto;
@@ -193,6 +219,15 @@ body {
 .close-tag:hover::after {
     background-color: $veryDarkGrayishCyan;
 }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1120px) {
     .search {
