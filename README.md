@@ -2,23 +2,11 @@
 
 
 ![screenshot](https://github.com/SJellen/staticJobListings/blob/master/ScreenShot.png)
-<p>
-  <a href="https://twitter.com/ScottJellen" target="_blank">
-    <img alt="Twitter: ScottJellen" src="https://img.shields.io/twitter/follow/ScottJellen.svg?style=social" />
-  </a>
-</p>
+
 
 > Static Job Listing for FEM
 
-### 🏠 [Homepage](https://static-job-listings-nine.now.sh/)
 
-## Author
-
-👤 **Scott Jellen**
-
-* Website: ScottJellen.com
-* Twitter: [@ScottJellen](https://twitter.com/ScottJellen)
-* Github: [@SJellen](https://github.com/SJellen)
 
 ## Show your support
 
